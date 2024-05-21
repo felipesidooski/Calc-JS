@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Sidooski</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <script type="text/javascript" src="./calc.js"></script>
+    <div class="center_container">
+        <h1>
+            <span>C</span>
+            <span>A</span>
+            <span>L</span>
+            <span>C</span>
+            <span>U</span>
+            <span>L</span>
+            <span>A</span>
+            <span>D</span>
+            <span>O</span>
+            <span>R</span>
+            <span>A</span>
+            <span> </span>
+            <span>S</span>
+            <span>I</span>
+            <span>D</span>
+            <span>O</span>
+            <span>O</span>
+            <span>S</span>
+            <span>K</span>
+            <span>I</span>
+        </h1>
+    
+        <div class="calculator">
+            <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="0" aria-label="Input" aria-describedby="button-addon" id="IDEquation" readonly>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-light" onclick="SetterNumber(7)">7</button>
+                <button class="btn btn-light" onclick="SetterNumber(8)">8</button>
+                <button class="btn btn-light" onclick="SetterNumber(9)">9</button>
+                <button class="btn btn-operator" onclick="SetterOperator('/')">/</button>
+                <button class="btn btn-light" onclick="SetterNumber(4)">4</button>
+                <button class="btn btn-light" onclick="SetterNumber(5)">5</button>
+                <button class="btn btn-light" onclick="SetterNumber(6)">6</button>
+                <button class="btn btn-operator" onclick="SetterOperator('*')">*</button>
+                <button class="btn btn-light" onclick="SetterNumber(1)">1</button>
+                <button class="btn btn-light" onclick="SetterNumber(2)">2</button>
+                <button class="btn btn-light" onclick="SetterNumber(3)">3</button>
+                <button class="btn btn-operator" onclick="SetterOperator('-')">-</button>
+                <button class="btn btn-light" onclick="SetterNumber(0)">0</button>
+                <button class="btn btn-operator" onclick="SetterOperator('+')">+</button>
+                <button class="btn btn-operator" onclick="SetterOperator('(')">(</button>
+                <button class="btn btn-operator" onclick="SetterOperator(')')">)</button>
+                <button class="btn btn-operator" onclick="SetterOperator('[')">[</button>
+                <button class="btn btn-operator" onclick="SetterOperator(']')">]</button>
+                <button class="btn btn-operator" onclick="DeleteEquation()">C</button>
+                <button class="btn btn-equals" onclick="MakeEquations()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
